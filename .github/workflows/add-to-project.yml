@@ -7,7 +7,7 @@ on:
 jobs:
   add-to-project:
     name: Adicionar ao GitHub Project
-    if: github.event.label.name == 'ready-for-qa'
+    if: github.event.label.name == 'Ready for QA'
     runs-on: ubuntu-latest
     steps:
       - name: Adicionar PR ao Project
